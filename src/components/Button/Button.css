@@ -1,0 +1,30 @@
+
+.Button {
+  padding: 10px 30px;
+  height: max-content;
+  width: max-content;
+  color: white;
+  background-color: rgba(78, 234, 211, 0.5) ;
+  border: 1px solid rgba(78, 234, 211, 0.5) ;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  
+}
+.Button:hover {
+  background-color: rgba(78, 234, 211, 1) ;
+}
+.Button__disabled {
+  color: rgba(57, 6, 250, 0.87) ;
+  background-color: rgb(219, 216, 229) ;
+  border-color: rgb(219, 216, 229) #b9f585;
+  cursor: default;
+
+  
+}
+.Button__disabled:hover {
+  color: rgba(57, 6, 250, 0.87);
+  background-color: rgb(219, 216, 229);
+  border-color: rgb(219, 216, 229) #b9f585;
+}

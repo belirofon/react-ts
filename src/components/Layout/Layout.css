@@ -1,5 +1,7 @@
 .Layout {
-  & .container {
+
+}
+.Layout-Container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -10,5 +12,6 @@
   background-image: url(https://i.ibb.co/tDW32Vc/bg-main.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100%;
-}
+  position: relative;
+  z-index: -1;
 }

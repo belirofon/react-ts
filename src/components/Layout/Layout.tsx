@@ -1,20 +1,15 @@
 import React, { ReactNode } from "react";
-import "./Layout.less";
+import "./Layout.css";
 
 interface ILayoutProps {
   children?: ReactNode;
   index?: number;
 }
 
-export const Layout: React.FC<ILayoutProps> = ({ children, index }) => {
+export const Layout: React.FC<ILayoutProps> = ({ children , index}) => {
   return (
-    <div
-      className={"Layout-container"}
-      onClick={() => {
-        console.log(index);
-      }}
-    >
-      Я див
+    <div className="Layout">
+      <div className="Layout-Container">{children}</div>
     </div>
   );
 };

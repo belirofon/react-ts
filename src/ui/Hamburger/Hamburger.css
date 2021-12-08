@@ -1,0 +1,54 @@
+.Hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.Burger {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+}
+.Burger__black {
+  background-color: #FBB754;
+}
+.Burger__black::before, .Burger__black::after {
+  background-color: #FBB754;
+}
+.Burger__white {
+  background-color: white;
+}
+.Burger__white::before, .Burger__white::after {
+  background-color: white;
+}
+.Burger::before, .Burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+}
+.Burger::before {
+  transform: translateY(-4px);
+}
+.Burger::after {
+  transform: translateY(4px);
+}
+.Burger__active {
+  transform: translateX(-18px);
+  background-color: transparent;
+  box-shadow: none;
+}
+.Burger__active::before {
+  transform: rotate(45deg) translate(10px, -10px);
+}
+.Burger__active::after {
+  transform: rotate(-45deg) translate(10px, 10px);
+}

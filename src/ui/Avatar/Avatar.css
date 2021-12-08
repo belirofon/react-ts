@@ -1,0 +1,62 @@
+.Avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: transparent;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+.AvatarBorder {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #65D0E4, #4D88DF, #6A53D6, #914ACC, #CF5E94, #E98958, #FBB754) no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.AvatarBorderBox {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+.AvatarInner {
+  position: relative;
+  z-index: 2;
+}
+.AvatarInner::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 14px;
+  height: 14px;
+  background-color: #4D88DF;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 1;
+}
+.AvatarFace {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #00ffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  transition: all 0.15s ease-out;
+}
+.Avatar:hover .AvatarFace {
+  background-color: #6A53D6;
+}

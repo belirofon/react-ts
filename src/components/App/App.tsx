@@ -1,12 +1,18 @@
 import React from "react";
-import "./App.less";
-import { Layout } from "components";
+import "./App.css";
+import { Header, Layout } from "components";
+import Sidebar from "components/Sidebar";
+import Button from "components/Button";
 
 export const App: React.FC = () => {
   return (
     <div className="App">
       <Layout>
-        <h1>Hello</h1>
+        <Header/>
+        <Sidebar/>
+        <Button/>
+        {/* <Content/> */}
+        {/* <Footer/> */}
       </Layout>
     </div>
   );
